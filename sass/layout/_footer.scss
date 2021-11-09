@@ -1,0 +1,190 @@
+/* footer */
+.footer{
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-width: none;
+}
+.footer-container{
+    min-width: none;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+}
+}
+.footer-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: baseline;
+    }
+}
+
+.footer-wraper{
+    @media screen and (min-width: 768px) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+}
+
+.footer-adress{
+    margin-bottom: 60px; 
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        margin-right: 55px;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+        margin-bottom: 0;
+    }
+}
+
+
+.logo-footer{
+    @include font(normal, bold, 26px, 31px,);
+    font-family: Raleway;
+    color: #FFFFFF;
+}
+.footer-contacts{
+    list-style: none;
+    margin-top: 20px;
+}
+.footer-item{
+    margin-top: 9px;
+}
+.footer-contacts-list1{
+    @include font(normal, normal, 14px, 24px,);
+    color: var(--primary-title-color);
+    transition: color 300ms linear;
+    &:hover,
+    &:focus {
+    color: #2196F3;
+}
+}
+.footer-contacts-list{
+    @include font(normal, normal, 14px, 24px,);
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 300ms linear;
+    &:hover,
+    &:focus {
+    color: #2196F3;
+}
+}
+/* 2box footer */
+
+.footer-social-list{
+    @extend %df-jc;
+}
+
+.footer-social{
+    margin-bottom: 60px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        align-items: flex-start;
+    }
+}
+.social-title{
+    @include font(normal, bold, 14px, 16px,);
+    text-transform: uppercase;
+    color: var(--primary-title-color);
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    }
+}
+
+/* 3box footer */
+.footer-mailing-title{
+        @include font(normal, bold, 14px, 16px,);
+        text-transform: uppercase;
+        color: var(--primary-title-color);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        @media screen and (min-width: 1200px) {
+            justify-content: flex-start;
+            }
+    }
+
+
+    .footer-mailing-subscription{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @media screen and (min-width: 480px) {
+        .footer-mailing-subscription {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .footer-mailing-subscription {
+        align-items: baseline;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        }
+    }
+    .footer-mailing-form{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    
+    @media screen and (min-width: 1200px) {
+        .footer-mailing-form {
+            margin-left: 100px;
+            text-align: left;
+    }
+    }
+    .footer-mailing-input{
+        width: 100%;
+        height: 50px;
+        padding: 15px 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-sizing: border-box;
+        box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color:#2F303A;
+        outline: none;
+    }
+    @media screen and (min-width: 768px) {
+        .footer-mailing-input {
+            width: 450px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .footer-mailing-input {
+        width: 358px;
+        margin-right: 12px;
+        margin-left: 0px;
+        }
+    }
+
+
+

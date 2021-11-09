@@ -1,0 +1,53 @@
+.after-title-hero{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
+    margin-bottom: 30px;
+}
+.current{
+    &:after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        display:block;
+        bottom: -47px;
+        background-color: #ffffff;
+        transition:background-color 450ms linear;
+    }
+    &:hover:after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color:#2196F3 ;
+        display:block;
+        bottom: -47px;
+    }
+    @media screen and (min-width: 1200px) {
+        &:after{
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            display:block;
+            bottom: -33px;
+            background-color: #ffffff;
+            transition:background-color 450ms linear;
+        }
+        &:hover:after{
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color:#2196F3 ;
+            display:block;
+            bottom: -33px;
+    }
+}
+}

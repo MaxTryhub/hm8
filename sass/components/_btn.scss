@@ -1,0 +1,150 @@
+.btn{
+    border-radius: 4px;
+}
+.section-btn{
+    @include font(normal, bold, 16px, 30px,0.06em);
+    padding: 10px 32px;
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--primary-title-color);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border:none;
+    transition: background-color 300ms linear;
+    &:hover{
+        background-color:#188ce8;
+    }
+}
+.footer-mailing-button{
+    @include font(normal, bold, 16px, 30px,0.06em);
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 10px 27px;
+    cursor: pointer;
+    color: var(--primary-title-color);
+    background-color: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color 400ms linear ;
+    &:hover{
+        background-color:#188ce8;
+    }
+}
+.footer-mailing-button-icon{
+    width: 24px;
+    height: 24px;
+}
+.footer-mailing-button-p{
+    padding-right: 10px;
+}
+.gallery-button-list{
+    @extend %df-jc;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @media screen and (min-width: 768px) {
+            justify-content: center;
+            margin-bottom: 0;
+        }
+        @media screen and (min-width: 1200px) {
+            justify-content: center;
+            margin-bottom: 0;
+        }
+}
+.portfolio-item-btn{
+    margin-left: 8px;
+    margin-bottom: 15px;
+}
+.portfolio-btn{
+    @include font(normal, 500, 16px, 26px,);
+    font-family: Roboto;
+    text-align: center;
+    cursor: pointer;
+    border:none;
+    background: #F5F4FA;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    transition: background-color 300ms linear;
+&:focus,
+&:hover {
+background-color: #2196f3;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+}
+.modal-close-btn {
+    width: 18px;
+    height: 18px;
+    justify-content: center;
+    align-items: center;
+}
+.input-btn {
+    @include font(normal, 500, 16px, 30px,0.06em);
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
+    cursor: pointer;
+    color: var(--primary-title-color);
+    border: none;
+    background-color: #2196f3;
+    transition: box-shadow 400ms linear;
+    &:hover,
+    &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+}
+.modal-btn {
+    @extend %align-items-jc;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+}
+
+
+
+
+
+.button-modal{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+    cursor: pointer;
+}
+}
+
+.button-modal-icon{
+    width: 11px;
+    height: 11px;
+    &:hover,
+    &:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+}
+}
+
